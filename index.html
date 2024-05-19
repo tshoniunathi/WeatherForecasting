@@ -11,7 +11,6 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-
     <title>ForeCast APP</title>
   </head>
   <body>
@@ -31,15 +30,18 @@
       <main>
         <div class="weather-data">
           <div>
-            <h1 class="weather-app-city" id="city">Pretoria</h1>
+            <h1 class="weather-app-city" id="city"></h1>
             <p class="weather-app-details" id="details">
-              Tuesday 16:19, Mostly cloudy <br />
-              Humidity: <strong>55%</strong>, wind: <strong>9 km/h NNE</strong>
+              <span id="time"></span>
+              <span id="description">Cloudy</span>
+              <br />
+              Humidity: <strong id="humidity"></strong>, wind:
+              <strong id="wind-speed"></strong>
             </p>
           </div>
           <div class="weather-app-temp-container">
             <div class="weather-app-icon">☁️</div>
-            <div class="weather-app-temp" id="temperature">18</div>
+            <div class="weather-app-temp" id="temperature"></div>
             <div class="weather-app-unit">°C</div>
           </div>
         </div>
@@ -57,10 +59,7 @@
           GitHub</a
         >
         and hosted on
-        <a
-          href="https://app.netlify.com/sites/forecast-unathi-app/overview"
-          target="_blank"
-        >
+        <a href="https://forecast-unathi-app.netlify.app/" target="_blank">
           Netlify</a
         >
       </footer>
